@@ -172,11 +172,7 @@ const EnhancedDatabaseConfigPage: React.FC = () => {
   useEffect(() => {
     const fetchConfig = async () => {
       try {
-        // Mock fetch for demonstration
-        // const res = await fetch("http://localhost:8000/api/configdata");
-        // const data = await res.json();
-
-        // Mock data
+     
         const data = {
           success: true,
           config: { database: {}, azure_config: {} },

@@ -6,11 +6,11 @@ from psycopg2.extras import RealDictCursor
 
 def get_pg_connection():
     return psycopg2.connect(
-        host=os.getenv("PG_HOST", "localhost"),
-        port=int(os.getenv("PG_PORT", 5432)),
-        dbname=os.getenv("PG_DATABASE", "nlp_db"),
-        user=os.getenv("PG_USER", "postgres"),
-        password=os.getenv("PG_PASSWORD", "root"),
+        host=os.getenv("PG_HOST"),
+        port=int(os.getenv("PG_PORT")),
+        dbname=os.getenv("PG_DATABASE"),
+        user=os.getenv("PG_USER"),
+        password=os.getenv("PG_PASSWORD"),
     )
 
 

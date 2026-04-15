@@ -27,7 +27,7 @@ function MapPage() {
     district: "All",
   });
 
-  const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:8000";
+  const apiUrl = import.meta.env.VITE_API_URL;
 
   const normalizeRow = (row) => {
     const get = (keys) => keys.reduce((val, k) => val ?? row[k], undefined);
