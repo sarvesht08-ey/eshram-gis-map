@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+psycopg2-binary
+python-dotenv
+openpyxl
+requests
+
+# Azure OpenAI — direct SDK, no LangChain needed
+openai>=1.0.0,<2.0.0

@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  @apply bg-gray-50 text-slate-900;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-500;
+}
+
+/* Leaflet Overrides for Light Mode */
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1) !important;
+}
+
+.leaflet-container {
+  background: #f8fafc !important;
+  font-family: 'Inter', sans-serif !important;
+}
